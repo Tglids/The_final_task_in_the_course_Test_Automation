@@ -17,5 +17,6 @@ def browser(request):
 
     yield browser
     browser.quit()
+    
 
 

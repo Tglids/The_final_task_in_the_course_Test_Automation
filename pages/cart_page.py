@@ -29,3 +29,6 @@ class CartPage(BasePage):
             assert False, 'Цена в корзине не найдена'
 
 
+
+
+

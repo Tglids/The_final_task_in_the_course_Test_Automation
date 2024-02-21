@@ -19,3 +19,4 @@ class ProductPage(BasePage):
             return price
         except:
             assert False, 'Цена на карточке продукта не найдена'
+

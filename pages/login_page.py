@@ -25,3 +25,9 @@ class LoginPage(BasePage):
         except:
             assert False, 'Форма регистрации не найдена'
         assert True
+
+    def register_new_user(self, email, password):
+        self.browser.find_element(*LoginPageLocators.REGISTER_EMAIL).send_keys(email)
+        self.browser.find_element(*LoginPageLocators.REGISTER_PASSWORD).send_keys(password)
+        self.browser.find_element(*LoginPageLocators.REGISTER_PASSWORD_2).send_keys(password)
+        self.browser.find_element(*LoginPageLocators.REGISTER_BTN).click()
